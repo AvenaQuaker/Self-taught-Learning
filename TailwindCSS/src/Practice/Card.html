@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card</title>
+        <link rel="stylesheet" href="./CardOutput.css" />
+    </head>
+    <button class="border bg-slate-400" id="boton">Modo Oscuro</button>
+    <body class="bg-Blanco transition-colors dark:bg-Negro">
+        <article
+            class="font-Monserrat text-[#574d33a8] shadow-lg shadow-black/50 dark:shadow-none p-5 py-7 grid grid-cols-2 grid-rows-2 m-5 rounded-md w-[350px] h-[235px] border-Blanco border bg-gradient-to-t from-yellow-100 to-gray-50">
+            <div class="font-bold text-sm">
+                <label>Messadine,Susah<br />Tunisia<br /> </label>
+                <label class="mt-2 text-[#574d3354]">March 13</label>
+            </div>
+            <div
+                class="flex justify-end relative"
+                <img
+                src="/src/A-Resources/Clima.svg"
+                class="left-7 top-3 absolute object-cover h-[90%] w-[90%] overflow-visible"></div>
+            <div class="flex items-end font-Warp text-5xl text-[#574d33]">
+                23°
+            </div>
+            <div class="flex justify-end items-end">
+                <button
+                    class="text-[#574d33a8] p-2 px-3 rounded-md bg-[#0000000f] font-bold">
+                    Celcius
+                </button>
+            </div>
+        </article>
+        <script>
+            const boton = document.querySelector("#boton");
+            boton.addEventListener("click", () => {
+                document.documentElement.classList.toggle("dark");
+            });
+        </script>
+    </body>
+</html>

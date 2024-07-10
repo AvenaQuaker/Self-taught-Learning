@@ -1,0 +1,18 @@
+@import url("https://fonts.cdnfonts.com/css/fredoka");
+@import url("https://fonts.cdnfonts.com/css/tilt-warp");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply border-Negro text-center w-full rounded-md 
+        focus:outline-none focus:bg-gray-200 transition-all;
+    }
+
+    .card {
+        @apply bg-red-500 grid place-content-center
+         shrink-0 grow rounded-lg text-white font-bold border-2 border-red-600 text-4xl;
+    }
+}
