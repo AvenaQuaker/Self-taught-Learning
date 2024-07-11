@@ -4,9 +4,11 @@ Welcome to my self-taught courses repository. This repository contains the conte
 
 ## Contents
 
-- [React](./React)
-  - Concepts, projects, and exercises from my React course.
-- [TailwindCSS](./TailwindCSS)
-  - Concepts, projects, and exercises from my TailwindCSS course.
-- [Other Courses](./OtherCourses)
-  - This folder includes content from other programming courses I have taken.
+-   [React](./React)
+    -   Concepts, projects, and exercises from my React course.
+-   [TailwindCSS](./TailwindCSS)
+    -   Concepts, projects, and exercises from my TailwindCSS course.
+-   [Vite](./Vite)
+    -   Concepts, projects, and exercises from my TailwindCSS course.
+-   [Other Courses](./OtherCourses)
+    -   This folder includes content from other programming courses I have taken.
