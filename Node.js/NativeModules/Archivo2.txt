@@ -1,0 +1,7 @@
+Frase1
+Frase2
+Frase3
+Frase4
+Frase5
+Frase6
+Frase7
