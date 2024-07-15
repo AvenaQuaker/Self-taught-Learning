@@ -23,7 +23,7 @@ const ACCEPTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:5500",
     "http://movies;.com",
-    "https://API-Rest.onrender.com",
+    "https://api-rest-auco.onrender.com",
 ];
 
 // GET de Peliculas
