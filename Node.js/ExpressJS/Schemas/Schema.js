@@ -1,5 +1,5 @@
 // Importacion de ZOD Verifications
-const z = require("zod");
+import z from "zod";
 
 // Definicion del esquema de datos para el objeto pelicula
 const movieSchema = z.object({
@@ -35,15 +35,9 @@ const movieSchema = z.object({
 });
 
 //Funciones de Validacion
-function validateMovie(object) {
+export function validateMovie(object) {
     return movieSchema.safeParse(object);
 }
-function validatePartialMovie(object) {
+export function validatePartialMovie(object) {
     return movieSchema.partial().safeParse(object);
 }
-
-// Exportacion del modulo para utilizarlo en otros archivos
-module.exports = {
-    validatePartialMovie,
-    validateMovie,
-};
