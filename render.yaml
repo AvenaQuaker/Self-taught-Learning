@@ -1,8 +1,0 @@
-services:
-    - type: web
-      name: API-REST
-      env: node
-      plan: free
-      rootDir: Node.js
-      buildCommand: npm install
-      startCommand: npm start
