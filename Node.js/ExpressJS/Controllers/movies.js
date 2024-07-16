@@ -1,5 +1,5 @@
 //Importacion de los Modelos
-import { movieModel } from "../Models/movie.js";
+import { movieModel } from "../Models/local-file-system/movie.js";
 
 // Importación de los métodos de validación de ZOD
 import { validateMovie, validatePartialMovie } from "../Schemas/Schema.js";
@@ -59,7 +59,6 @@ export class MovieController {
             id,
             input: result.data,
         });
-        movies[movieIndex] = updatedMovie;
 
         return res.json(updatedMovie);
     }

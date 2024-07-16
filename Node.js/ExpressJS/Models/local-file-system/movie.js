@@ -2,7 +2,7 @@
 import { randomUUID } from 'crypto';
 
 // Importación del json de películas
-import movies from "../movies.json" with { type: "json" };
+import movies from "../../movies.json" with { type: "json" };
 
 // Clase Modelo Movie
 export class movieModel {
