@@ -1,8 +1,8 @@
 //Importacion de los Modelos
-import { movieModel } from "../Models/movie";
+import { movieModel } from "../Models/movie.js";
 
 // Importación de los métodos de validación de ZOD
-import { validateMovie, validatePartialMovie } from "./Schemas/Schema.js";
+import { validateMovie, validatePartialMovie } from "../Schemas/Schema.js";
 
 export class MovieController {
     static async getALL(req, res) {
