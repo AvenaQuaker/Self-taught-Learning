@@ -1,7 +1,7 @@
 //Importacion de las Dppendencias
 import { Router } from "express";
 import { MovieController } from "../Controllers/movies.js";
-import { HomeController } from "../Controllers/home.js";
+import { HomeController } from "../Controllers/Home.js";
 
 // Controlacion de Pagina de Inicio
 export const createHomeRouter = () => {
