@@ -6,6 +6,10 @@ import movies from "../../movies.json" with { type: "json" };
 
 // Clase Modelo Movie
 export class movieModel {
+    static async Todo() {
+        return movies;
+    }
+
     static async getALL({ genre }){
         if (genre) {
             return movies.filter((movie) =>
