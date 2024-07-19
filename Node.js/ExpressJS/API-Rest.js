@@ -4,13 +4,16 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { createHomeRouter, createMovieRouter } from "./Routes/movies.js";
 import { corsMiddleware } from "./Middlewares/Cors.js";
+import { E500, E404 } from "./Middlewares/Errores.js";
 //import { movieModel } from "./Models/mySQL/movie.js";
 import { movieModel } from "./Models/local-file-system/movie.js";
 
-// Creacion,Middleware y Seguridad
+// Creacion,Middlewares y Seguridad
 const app = express();
 app.use(express.json());
 app.use(corsMiddleware());
+app.use(E500);
+app.use(E404);
 app.disable("x-powered-by");
 
 // Obtener el directorio base correctamente
