@@ -23,8 +23,7 @@ export class MovieController {
         const { id } = req.params;
         const movie = await this.movieModel.getByID({ id });
 
-        if (movie) {
-            console.log(movie[0]);
+        if (!movie || movie == undefined) {
             res.render("Pagina2", { movie: movie[0] });
         } else {
             res.status(404).render("error", {
