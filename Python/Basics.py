@@ -1,0 +1,3 @@
+Cadena = 'Cadena'
+
+print(Cadena)

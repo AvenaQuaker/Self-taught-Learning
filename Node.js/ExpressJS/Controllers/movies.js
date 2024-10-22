@@ -16,7 +16,7 @@ export class MovieController {
         const movies = await this.movieModel.getAll({ genre });
 
         //Que es lo que Renderiza
-        res.json(movies);
+        res.render("Pagina1", { movies: movies });
     };
 
     getById = async (req, res) => {
