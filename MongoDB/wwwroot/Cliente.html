@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="Tailwind.css" />
+    </head>
+    <body class="bg-gray-800 p-10">
+        <main
+            class="border border-black h-max w-[90vw] p-3 flex flex-col gap-5 place-items-center">
+            <div
+                class="border border-blue-500 bg-blue-500 shadow-xl rounded-lg p-7 text-center font-Warp text-2xl w-full">
+                PRUEBA DE CORS
+            </div>
+
+            <form
+                target="resultado"
+                method="GET"
+                action="http://127.0.0.1:1234">
+                <button
+                    class="font-bold text-lg rounded-xl shadow-2xl font-Fredoka p-4 bg-green-600"
+                    type="submit">
+                    PeticionFORM
+                </button>
+            </form>
+
+            <iframe
+                class="bg-black rounded-xl font-Fredoka"
+                name="resultado"></iframe>
+
+            <button
+                onclick="API()"
+                class="font-bold text-lg rounded-xl shadow-2xl font-Fredoka p-4 bg-red-600">
+                Realizar Peticion a la API
+            </button>
+
+            <form
+                id="forma"
+                method="POST"
+                class="flex flex-col gap-2 place-items-center rounded-xl p-5 bg-slate-400">
+                <label class="font-Warp text-xl">Formulario</label>
+                <input
+                    id="nombre"
+                    name="nombre"
+                    pattern="[A-Za-z]+"
+                    title="No pongas numeros mrd"
+                    class="rounded-md text-center"
+                    placeholder="Nombre"
+                    required />
+
+                <input
+                    type="text"
+                    id="Apellido"
+                    name="apellido"
+                    pattern="[A-Za-z]+"
+                    title="No pongas numeros mrd"
+                    class="rounded-md text-center"
+                    placeholder="Apellido"
+                    required />
+
+                <input
+                    type="text"
+                    id="edad"
+                    name="edad"
+                    class="rounded-md text-center"
+                    placeholder="Edad"
+                    required />
+
+                <input
+                    type="text"
+                    id="comida"
+                    name="comida"
+                    pattern="[A-Za-z]+"
+                    title="No pongas numeros mrd"
+                    class="rounded-md text-center"
+                    placeholder="Comida"
+                    required />
+
+                <button
+                    type="submit"
+                    class="font-Warp mt-3 p-5 rounded-xl bg-green-600">
+                    POS MANDARLO
+                </button>
+            </form>
+            <form
+                id="forma2"
+                method="post"
+                enctype="multipart/form-data"
+                class="shadow rounded-2xl place-items-center gap-3 bg-slate-400 px-9 py-3 flex flex-col">
+                <label for="titulo" class="font-Warp text-2xl"
+                    >Contactanos</label
+                >
+                <section class="flex flex-row font-Fredoka gap-5">
+                    <div class="w-60 h-60 object-fill">
+                        <img
+                            class="w-full h-full rounded-3xl"
+                            src="https://storage.googleapis.com/web-laive-storage/Media/pages/img_contactanos.jpg"
+                            alt="No" />
+                    </div>
+                    <section class="flex flex-col gap-3">
+                        <input
+                            type="text"
+                            class="rounded-lg bg-slate-200 text-center"
+                            placeholder="Correo" />
+                        <input
+                            type="text"
+                            class="rounded-lg bg-slate-200 text-center"
+                            placeholder="Destinatario" />
+                        <textarea
+                            name="desc"
+                            id="desc"
+                            class="w-80 h-40 rounded-lg bg-slate-200 text-center"
+                            placeholder="Mensaje"></textarea>
+                    </section>
+                </section>
+                <section class="gap-5 font-Fredoka flex flex-row">
+                    <input
+                        type="file"
+                        name="archivo"
+                        class="font-semibold rounded-xl bg-blue-500 p-5" />
+
+                    <button
+                        id="btn"
+                        type="submit"
+                        class="font-semibold rounded-xl bg-green-500 p-5">
+                        Enviar
+                    </button>
+                </section>
+            </form>
+
+            <button
+                onclick="SolicitarImagen()"
+                class="font-bold text-lg rounded-xl shadow-2xl font-Fredoka p-4 bg-red-600">
+                Solicitar Imagen
+            </button>
+            <img id="imagen" alt="imagenSolicitada" />
+        </main>
+        <script src="Cliente.js"></script>
+    </body>
+</html>

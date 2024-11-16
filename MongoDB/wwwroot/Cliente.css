@@ -1,0 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/fredoka");
+@import url("https://fonts.cdnfonts.com/css/tilt-warp");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
